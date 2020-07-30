@@ -1,0 +1,7 @@
+<div class="jumbotron">
+  <h2 class="container">I am the parent component</h2>
+  <input type='text' placeholder="Please eneter your name here..." [value]="name" (input)="changing($event)"/>
+  <h3>{{name}}</h3>
+</div>
+
+<child-cmp [na]="name"></child-cmp>
